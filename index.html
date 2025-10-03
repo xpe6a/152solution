@@ -1,148 +1,199 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Соблюдение ФЗ-152 для ИИ-разработчиков — без серверов и геморроя</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1048/1048947.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Защитим ваш ИИ-сервис от рисков ФЗ-152</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1048/1048947.png" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6366f1', // indigo-500
+            primaryDark: '#4f46e5', // indigo-600
+            accent: '#10b981', // emerald-500
+            dark: '#111827',
+            light: '#f9fafb'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-border {
+      position: relative;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      padding: 2px;
+      border-radius: 16px;
+    }
+    .gradient-border > div {
+      background: white;
+      border-radius: 14px;
+    }
+  </style>
 </head>
-
 <body class="bg-gray-50 text-gray-900">
-  <!-- HERO -->
-  <section class="bg-gradient-to-r from-indigo-600 to-blue-700 text-white py-20">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">
-        Соблюдение ФЗ-152 для ИИ-разработчиков<br>без аренды серверов и юристов
-      </h1>
-      <p class="text-xl mb-8">
-        Мы берём на себя весь юридический риск. Подключение за 2 часа. От 25 000 ₽/мес.
-      </p>
-      <a href="#form" class="bg-white text-blue-700 font-bold px-8 py-4 rounded-lg shadow hover:bg-blue-50 transition">
-        Подключиться →
-      </a>
-    </div>
-  </section>
+  <!-- HERO -->
+  <section class="bg-gradient-to-br from-indigo-600 to-purple-700 text-white py-24">
+    <div class="container mx-auto px-6 text-center max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+        Защитим ваш ИИ от ФЗ-152<br>
+        <span class="text-emerald-300">Легальная обработка персональных данных от 25.000 рублей/мес</span>
+      </h1>
+      <p class="text-xl mb-10 opacity-90">
+        Используйте ChatGPT, Claude и другие зарубежные LLM без штрафов
+      </p>
+      <a href="#form" class="bg-white text-indigo-700 font-bold px-8 py-4 rounded-xl shadow-lg hover:bg-gray-100 transition transform hover:-translate-y-1">
+        Подключить за 2 часа →
+      </a>
+    </div>
+  </section>
 
-  <!-- ПРЕИМУЩЕСТВА -->
-  <section class="py-20">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-12">Почему выбирают нас</h2>
-      <div class="grid md:grid-cols-3 gap-10">
-        <div class="p-6 bg-white rounded-2xl shadow">
-          <img src="https://cdn-icons-png.flaticon.com/512/5539/5539417.png" class="w-16 mx-auto mb-4" alt="">
-          <h3 class="text-xl font-semibold mb-2">Без юридических рисков</h3>
-          <p>Всю обработку берёт на себя наша компания, внесённая в реестр операторов ПДн.</p>
-        </div>
-        <div class="p-6 bg-white rounded-2xl shadow">
-          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="w-16 mx-auto mb-4" alt="">
-          <h3 class="text-xl font-semibold mb-2">Моментальное подключение</h3>
-          <p>Интеграция за 2 часа. Без серверов, без настройки хостинга, без ИТ-отдела.</p>
-        </div>
-        <div class="p-6 bg-white rounded-2xl shadow">
-          <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="w-16 mx-auto mb-4" alt="">
-          <h3 class="text-xl font-semibold mb-2">Юридическая защита</h3>
-          <p>Мы подписываем договор и несем ответственность за соблюдение ФЗ-152.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- ПОЧЕМУ ЭТО ВАЖНО -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-3xl font-bold text-center mb-12">Почему вы уже в зоне риска</h2>
+      <div class="space-y-6 text-lg text-gray-700">
+        <p>
+          <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>
+          <strong>ФЗ-152 требует локализации .</strong> Обрабатываете звонки россиян с использованием иностранных сервисов — вы нарушаете закон.
+        </p>
+        <p>
+          <i class="fas fa-user-shield text-red-500 mr-2"></i>
+          <strong>Штраф — до 180 000 ₽ за первый случай.</strong> А при повторном — до 6% от выручки. Роскомнадзор уже проверяет ИИ-стартапы.
+        </p>
+        <p>
+          <i class="fas fa-robot text-gray-500 mr-2"></i>
+          <strong>Гигачат вместо Chat-GPT? Вы теряете конкурентное преимущество.</strong> Клиенты платят за качество — а не за компромиссы из-за страха перед законом.
+        </p>
+        <p class="mt-6 bg-blue-50 p-5 rounded-xl border border-blue-100">
+          <i class="fas fa-lightbulb text-blue-600 mr-2"></i>
+          <strong>Решение есть:</strong> пусть оператором ПДн будем мы. Вы — просто поставщик технологии. Без рисков. Без серверов в РФ.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <!-- СХЕМА -->
-  <section class="py-20 bg-gray-100">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-10">Как устроено взаимодействие</h2>
+  <!-- ПРЕИМУЩЕСТВА -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">Почему выбирают нас</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="gradient-border">
+          <div class="p-8">
+            <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-balance-scale text-emerald-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Легально</h3>
+            <p class="text-gray-600">Нет рисков штрафа РКН ни вам, ни вашим клиентам.</p>
+          </div>
+        </div>
+        <div class="gradient-border">
+          <div class="p-8">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-bolt text-blue-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Быстро</h3>
+            <p class="text-gray-600">Подключение к сервису в течение суток.</p>
+          </div>
+        </div>
+        <div class="gradient-border">
+          <div class="p-8">
+            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-tag text-amber-600 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Выгодно</h3>
+            <p class="text-gray-600">В 2-3 раза дешевле аналогов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div class="overflow-x-auto">
-        <table class="w-full md:w-2/3 mx-auto border border-gray-300 rounded-xl bg-white">
-          <thead class="bg-blue-600 text-white">
-            <tr>
-              <th class="py-3 px-4">Роль</th>
-              <th class="py-3 px-4">Функция</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y">
-            <tr>
-              <td class="py-3 px-4 font-bold">Заказчик</td>
-              <td class="py-3 px-4">Использует ИИ-решение для обработки звонков</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 font-bold">Поставщик ИИ-решений</td>
-              <td class="py-3 px-4">Предоставляет ИИ-бота и управляет логикой общения</td>
-            </tr>
-            <tr>
-              <td class="py-3 px-4 font-bold">Оператор ПДн (мы)</td>
-              <td class="py-3 px-4">Формально обрабатывает ПДн и несёт ответственность по ФЗ-152</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+  <!-- СХЕМА -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center max-w-4xl">
+      <h2 class="text-3xl font-bold mb-12">Как это работает</h2>
+      <div class="space-y-6 text-lg">
+        <div class="flex items-center justify-between flex-wrap gap-4">
+          <div class="text-left">
+            <div class="font-bold text-indigo-700">Вы</div>
+            <div class="text-gray-600">Разрабатываете ИИ-решение (на базе OpenAI, Whisper и др.)</div>
+          </div>
+          <i class="fas fa-arrow-right text-gray-400"></i>
+          <div class="text-left">
+            <div class="font-bold text-purple-700">Ваши клиенты</div>
+            <div class="text-gray-600">Используют ваш ИИ для обработки звонков от россиян</div>
+          </div>
+          <i class="fas fa-arrow-right text-gray-400"></i>
+          <div class="text-left">
+            <div class="font-bold text-emerald-600">Мы</div>
+            <div class="text-gray-600">Обеспечиваем соответствие ФЗ-152. С финансовыми гарантиями с нашей стороны.</div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 bg-indigo-50 p-6 rounded-2xl border border-indigo-100">
+        <p class="text-indigo-800 font-medium">
+          Ваш клиент звонит → данные идут через нашу инфраструктуру → ИИ обрабатывает в облаке → результат возвращается клиенту.<br>
+          <strong>Вы не оператор ПДн. Вы — поставщик технологии.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
 
-      <div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-6">
-        <div class="flex flex-col items-center">
-          <div class="bg-blue-600 text-white rounded-full px-5 py-3 font-bold shadow">
-            ☎ Клиент звонит
-          </div>
-          <div class="text-gray-500 mt-2">Передача речи → OpenAI</div>
-        </div>
+  <!-- CTA -->
+  <section class="py-20 bg-gradient-to-r from-indigo-600 to-purple-700 text-white text-center">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <h2 class="text-3xl font-bold mb-6">Хватит бояться ФЗ-152</h2>
+      <p class="text-xl mb-8 opacity-90">
+        Используйте зарубежную инфраструктуру в своих сервисах — легально, быстро и без рисков.
+      </p>
+      <a href="#form" class="bg-white text-indigo-700 font-bold px-10 py-5 rounded-xl text-lg shadow-lg hover:bg-gray-100 transition">
+        Начать сейчас →
+      </a>
+    </div>
+  </section>
 
-        <div class="text-3xl text-blue-600">➡</div>
+  <!-- ФОРМА -->
+  <section id="form" class="py-20 bg-gray-900 text-white">
+    <div class="container mx-auto px-6 max-w-2xl text-center">
+      <h2 class="text-3xl font-bold mb-4">Оставьте заявку</h2>
+      <p class="mb-8 text-gray-300">
+        Подключим ваш ИИ-бот к ФЗ-152 за 2 часа. Без штрафов. Без головной боли.
+      </p>
+      <form id="leadForm" class="bg-gray-800 p-8 rounded-2xl shadow space-y-6">
+        <input type="text" placeholder="Имя" class="w-full p-4 rounded-lg border border-gray-600 bg-gray-900 text-white" required>
+        <input type="email" placeholder="Email" class="w-full p-4 rounded-lg border border-gray-600 bg-gray-900 text-white" required>
+        <input type="tel" placeholder="Телефон" class="w-full p-4 rounded-lg border border-gray-600 bg-gray-900 text-white" required>
+        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 w-full py-4 rounded-lg font-bold text-lg transition">
+          Отправить заявку
+        </button>
+      </form>
+      <div class="mt-8 flex justify-center gap-6 text-gray-400">
+        <a href="tel:+79991234567" class="hover:text-white"><i class="fas fa-phone mr-2"></i> +7 (999) 123-45-67</a>
+        <a href="https://t.me/your_username" target="_blank" class="hover:text-white"><i class="fab fa-telegram mr-2"></i> Telegram</a>
+        <a href="mailto:hello@yourdomain.ru" class="hover:text-white"><i class="fas fa-envelope mr-2"></i> Email</a>
+      </div>
+    </div>
+  </section>
 
-        <div class="flex flex-col items-center">
-          <div class="bg-yellow-400 text-black rounded-full px-5 py-3 font-bold shadow">
-            🤖 ИИ-бот обрабатывает
-          </div>
-          <div class="text-gray-500 mt-2">OpenAI → оператор ПДн (мы)</div>
-        </div>
+  <!-- ФУТЕР -->
+  <footer class="bg-black text-gray-500 py-6 text-center text-sm">
+    © 2025. Все права защищены. 
+    <a href="privacy.html" class="underline hover:text-white">Политика конфиденциальности</a>
+  </footer>
 
-        <div class="text-3xl text-blue-600">➡</div>
-
-        <div class="flex flex-col items-center">
-          <div class="bg-green-500 text-white rounded-full px-5 py-3 font-bold shadow">
-            📄 Данные передаются заказчику
-          </div>
-          <div class="text-gray-500 mt-2">Запись, транскрипт и аналитика</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ЦЕНА -->
-  <section class="py-20 text-center">
-    <h2 class="text-3xl font-bold mb-6">Цена — 25 000 ₽/мес</h2>
-    <p class="text-lg mb-8">Всё включено: договор, обработка ПДн, интеграция и поддержка.</p>
-    <a href="#form" class="bg-blue-700 text-white px-10 py-4 rounded-lg font-semibold text-lg shadow hover:bg-blue-800 transition">
-      Подключить сейчас →
-    </a>
-  </section>
-
-  <!-- ФОРМА -->
-  <section id="form" class="py-20 bg-gray-900 text-white text-center">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-6">Оставьте заявку</h2>
-      <p class="mb-10 text-gray-300">Мы свяжемся в течение 2 часов и подключим ваш ИИ-бот без нарушений закона</p>
-
-      <form class="max-w-lg mx-auto bg-gray-800 p-8 rounded-2xl shadow space-y-6">
-        <input type="text" placeholder="Имя" class="w-full p-4 rounded-lg border border-gray-600 bg-gray-900 text-white" required>
-        <input type="email" placeholder="Email" class="w-full p-4 rounded-lg border border-gray-600 bg-gray-900 text-white" required>
-        <input type="tel" placeholder="Телефон" class="w-full p-4 rounded-lg border border-gray-600 bg-gray-900 text-white" required>
-        <button type="submit" class="bg-blue-600 hover:bg-blue-700 w-full py-4 rounded-lg font-bold text-lg">
-          Отправить заявку
-        </button>
-      </form>
-    </div>
-  </section>
-
-  <!-- ФУТЕР -->
-  <footer class="bg-black text-gray-400 py-6 text-center text-sm">
-    © 2025. Все права защищены. <a href="privacy.html" class="underline hover:text-white">Политика конфиденциальности</a>
-  </footer>
-
-  <script>
-    document.querySelector("form").addEventListener("submit", e => {
-      e.preventDefault();
-      alert("✅ Заявка отправлена! Мы свяжемся с вами в течение 2 часов.");
-    });
-  </script>
+  <script>
+    document.getElementById("leadForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("✅ Заявка отправлена! Мы свяжемся с вами в течение 2 часов.");
+      this.reset();
+    });
+  </script>
 </body>
 </html>
